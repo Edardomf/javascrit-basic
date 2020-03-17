@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset='utf-8'>
+         <title>Cambiar palabra azul por verde y la letra o por la u.
+     </title>
+    </head>
+    <body>
+     <script>
+         var color = "verd";
+        var frase = "Tinc un cotxe de color " + color;
+        console.log(frase);
+ /*
+        color = "blau";
+        var frase = "Tinc un cotxe de color " + color;
+        console.log(frase);
+
+*/
+
+var str = "Tinc un cotxe de color blau";
+var frase = str.replace("verd","blau")
+
+console.log(frase);
+
+
+
+
+var str2 = "Tinc un cotxe de color blau";
+var frase = str2.replace(/o/g,"u")
+
+console.log(frase);
+       
+      
+           
+   </script>
+   </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset='utf-8'>
+         <title>Que el usuario introduzca la nota y el programa diga si está aprobado (>=5) o reprobado (<5).
+     </title>
+    </head>
+    <body>
+     <script>
+        var nota_examen = parseInt(prompt("Introduce la nota del examen"));
+            if (nota_examen > 10){
+        console.log("Introduce una nota válida");
+    } else if (nota_examen >=5 && nota_examen <= 10) {
+        console.log("Aprobastes el examen con " + nota_examen);
+
+    } else {
+        console.log("Reprobastes el examen con " + nota_examen);
+
+    }
+   </script>
+   </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Condicionales</title>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        Introduce el primer número: <input type="text" id="numero1" /><br>
+        Introduce el segundo número: <input type="text" id="numero2" /><br>
+        Introduce el operador: <input type="text" id="operador" /><br>
+        <input type="button" onClick="calcular()" Value="Calcular"/>
+        <p id="resultado"></p>
+        
+        <script>
+
+            function calcular(operador, valor1, valor2){
+                var resultado;
+                var valor1 = parseInt(document.getElementById("numero1").value);
+                var valor2 = parseInt(document.getElementById("numero2").value);
+                var operador = document.getElementById("operador").value;
+                
+                switch(operador){
+                    case "+":
+                        resultado = (valor1 + valor2);
+                        break;
+                    case "-":
+                    resultado = (valor1 - valor2);
+                        break;
+                    case "*":
+                    resultado = (valor1 * valor2);
+                        break; 
+                    case "/":
+                    resultado = (valor1 / valor2);
+                        break;
+                    default:
+                    resultado = "Has introducido mal el operador";
+                        break;
+                }
+                document.getElementById("resultado").innerHTML = "El resultado es " + resultado;
+            }
+
+        </script>
+    </body>   
+</html>     
+        
